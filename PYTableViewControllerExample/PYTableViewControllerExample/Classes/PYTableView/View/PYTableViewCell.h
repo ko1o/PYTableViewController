@@ -16,14 +16,14 @@
 
 @end
 
-@protocol PYTableViewDataSource <UITableViewDataSource>
+@protocol PYTableViewCellDataSource <UITableViewDataSource>
 
 @end
 
 @interface PYTableViewCell : UITableViewCell
 
 @property (nonatomic, weak) id<PYTableViewCellDelegate> delegate;
-@property (nonatomic, weak) id<PYTableViewDataSource> dataSource;
+@property (nonatomic, weak) id<PYTableViewCellDataSource> dataSource;
 
 /** cell的模型*/
 @property (nonatomic, strong) PYCell *item;

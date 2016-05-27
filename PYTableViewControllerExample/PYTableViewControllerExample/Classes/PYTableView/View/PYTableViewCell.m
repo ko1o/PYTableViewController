@@ -10,7 +10,6 @@
 #import "PYCell.h"
 #import "PYArrowCell.h"
 #import "PYSwitchCell.h"
-#import "PYLabelCell.h"
 #import "PYDetailCell.h"
 
 @interface PYTableViewCell ()

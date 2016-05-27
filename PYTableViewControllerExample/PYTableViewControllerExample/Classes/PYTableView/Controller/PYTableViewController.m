@@ -7,9 +7,8 @@
 //
 
 #import "PYTableViewController.h"
-#import "objc/runtime.h"
 
-@interface PYTableViewController ()<PYTableViewCellDelegate, PYTableViewDataSource>
+@interface PYTableViewController ()<PYTableViewCellDelegate, PYTableViewCellDataSource>
 
 @end
 

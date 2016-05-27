@@ -17,7 +17,6 @@
 		6B8248F41CF692A600F134F6 /* PYExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8248F31CF692A600F134F6 /* PYExampleTableViewController.m */; };
 		6B82491D1CF695F700F134F6 /* PYArrowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249141CF695F700F134F6 /* PYArrowCell.m */; };
 		6B82491E1CF695F700F134F6 /* PYCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249161CF695F700F134F6 /* PYCell.m */; };
-		6B82491F1CF695F700F134F6 /* PYLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249181CF695F700F134F6 /* PYLabelCell.m */; };
 		6B8249201CF695F700F134F6 /* PYSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B82491A1CF695F700F134F6 /* PYSwitchCell.m */; };
 		6B8249261CF6960C00F134F6 /* UITableViewCell+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249231CF6960C00F134F6 /* UITableViewCell+Extension.m */; };
 		6B8249271CF6960C00F134F6 /* UITableViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249251CF6960C00F134F6 /* UITableViewController+Extension.m */; };
@@ -68,8 +67,6 @@
 		6B8249141CF695F700F134F6 /* PYArrowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYArrowCell.m; sourceTree = "<group>"; };
 		6B8249151CF695F700F134F6 /* PYCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYCell.h; sourceTree = "<group>"; };
 		6B8249161CF695F700F134F6 /* PYCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYCell.m; sourceTree = "<group>"; };
-		6B8249171CF695F700F134F6 /* PYLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYLabelCell.h; sourceTree = "<group>"; };
-		6B8249181CF695F700F134F6 /* PYLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYLabelCell.m; sourceTree = "<group>"; };
 		6B8249191CF695F700F134F6 /* PYSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSwitchCell.h; sourceTree = "<group>"; };
 		6B82491A1CF695F700F134F6 /* PYSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSwitchCell.m; sourceTree = "<group>"; };
 		6B8249221CF6960C00F134F6 /* UITableViewCell+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Extension.h"; sourceTree = "<group>"; };
@@ -252,8 +249,6 @@
 				6B8249141CF695F700F134F6 /* PYArrowCell.m */,
 				6B8249151CF695F700F134F6 /* PYCell.h */,
 				6B8249161CF695F700F134F6 /* PYCell.m */,
-				6B8249171CF695F700F134F6 /* PYLabelCell.h */,
-				6B8249181CF695F700F134F6 /* PYLabelCell.m */,
 				6B8249191CF695F700F134F6 /* PYSwitchCell.h */,
 				6B82491A1CF695F700F134F6 /* PYSwitchCell.m */,
 				6B8249381CF6B9A400F134F6 /* PYDetailCell.h */,
@@ -424,7 +419,6 @@
 				6B8248BB1CF6916B00F134F6 /* main.m in Sources */,
 				6B8249201CF695F700F134F6 /* PYSwitchCell.m in Sources */,
 				6B8249341CF698D500F134F6 /* UIView+extension.m in Sources */,
-				6B82491F1CF695F700F134F6 /* PYLabelCell.m in Sources */,
 				6B82491E1CF695F700F134F6 /* PYCell.m in Sources */,
 				6B82493A1CF6B9A400F134F6 /* PYDetailCell.m in Sources */,
 				6B8249311CF6986900F134F6 /* PYGroup.m in Sources */,

@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "setting.png",
+      "filename" : "apple-1.png",
       "scale" : "1x"
     },
     {
@@ -12,6 +12,7 @@
     },
     {
       "idiom" : "universal",
+      "filename" : "apple-2.png",
       "scale" : "3x"
     }
   ],
