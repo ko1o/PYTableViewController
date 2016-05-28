@@ -13,10 +13,13 @@
 
 - (instancetype)init
 {
-    self = [super init];
-    UISwitch *switchButton = [[UISwitch alloc] init];
-    self.switchButton = switchButton;
-    [self.switchButton  addTarget:self action:@selector(didClicked:) forControlEvents:UIControlEventValueChanged];
+    if (self = [super init]) {
+        UISwitch *switchButton = [[UISwitch alloc] init];
+        self.switchButton = switchButton;
+        [self.switchButton  addTarget:self action:@selector(didClicked:) forControlEvents:UIControlEventValueChanged];
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+        self.accessoryView = self.switchButton;
+    }
     return self;
 }
 

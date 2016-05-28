@@ -19,10 +19,13 @@
 // 初始化
 - (instancetype)init
 {
-    PYCell *cell = [super init];
-    // 默认cell选中样式
-    cell.selectionStyle = UITableViewCellSelectionStyleDefault;
-    return cell;
+    if (self = [super init]) {
+        // 默认cell选中样式
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+        // 默认cell的辅助样式
+        self.accessoryType = UITableViewCellAccessoryNone;
+    }
+    return self;
 }
 
 + (instancetype)cellWithTitle:(NSString *)title
@@ -31,6 +34,7 @@
     cell.title = title;
     return cell;
 }
+
 
 
 + (instancetype)cellWithTitle:(NSString *)title icon:(NSString *)icon

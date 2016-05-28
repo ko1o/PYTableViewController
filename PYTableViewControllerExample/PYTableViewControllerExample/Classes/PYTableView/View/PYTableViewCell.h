@@ -31,6 +31,12 @@
 /** 每一个cell绑定一个tableView */
 @property (nonatomic, weak) UITableView *tableView;
 
+/** 带箭头的cell的自定义辅助view */
+@property (nonatomic, weak) UIButton *arrowAccessoryView;
+
+/** 带详情的cell的自定义辅助view */
+@property (nonatomic, weak) UIButton *detailAccessoryView;
+
 + (instancetype)cellWithTableView:(UITableView *)tableView;
 
 + (instancetype)cellWithTableView:(UITableView *)tableView withTableViewCellStyle:(UITableViewCellStyle)style;

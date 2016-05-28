@@ -63,10 +63,11 @@
     cell.delegate = self;
     cell.dataSource = self;
     
+    
+    // 绑定cell（注意：必须先绑定cell再设置数据，因为在设置cell数据时用到了tableViewCell）
+    item.tableViewCell = cell;
     // 设置cell数据
     cell.item = item;
-    // 绑定cell
-    item.tableViewCell = cell;
     
     return cell;
 }

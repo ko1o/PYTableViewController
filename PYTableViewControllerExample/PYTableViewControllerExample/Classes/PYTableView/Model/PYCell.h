@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@class PYTableViewCell;
+#import "PYTableViewCell.h"
 @class UITableViewCell;
 
 typedef void(^PYTableViewCellBlock)(PYTableViewCell *selectedCell, UITableView *tableView);

@@ -14,12 +14,6 @@
 
 @interface PYTableViewCell ()
 
-/** 带箭头的cell的自定义辅助view */
-@property (nonatomic, weak) UIButton *arrowAccessoryView;
-
-/** 带详情的cell的自定义辅助view */
-@property (nonatomic, weak) UIButton *detailAccessoryView;
-
 
 
 @end
@@ -70,56 +64,15 @@ static NSString *ID = @"cell";
     self.detailTextLabel.font = item.accessoryTitleFont ? item.accessoryTitleFont : [UIFont systemFontOfSize:14];
     self.detailTextLabel.textColor = item.accessoryTitleColor ? item.accessoryTitleColor : [UIColor grayColor];
     self.imageView.image = item.icon.length ? [UIImage imageNamed:item.icon] : nil;
+    self.selectionStyle = item.selectionStyle;
+    self.accessoryType = item.accessoryType;
+    self.accessoryView = item.accessoryView;
+    self.backgroundView = item.backgroundImage ? [[UIImageView alloc] initWithImage:[UIImage imageNamed:item.backgroundImage]] : nil;
     
-    if (item.backgroundImage) { // 有背景图
-        self.backgroundView.hidden = NO;
-        // 设置背景图片
-        self.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:item.backgroundImage]];
-    }else{
-        self.backgroundView = nil;
-    }
-    
-    // 设置辅助样式、选中样式
-    self.arrowAccessoryView.hidden = YES;
-    self.detailAccessoryView.hidden = YES;
-    
-    if ([item isKindOfClass:[PYArrowCell class]]) { // 右边辅助为箭头
-        self.selectionStyle = UITableViewCellSelectionStyleDefault;
-        self.accessoryView = nil;
-        self.arrowAccessoryView.hidden = NO;
-        self.accessoryType = item.hiddenArrow ? UITableViewCellAccessoryNone : UITableViewCellAccessoryDisclosureIndicator;
-        item.accessoryView.y = (item.height - item.accessoryView.height) * 0.5;
-        item.accessoryView.x = [UIScreen mainScreen].bounds.size.width - item.accessoryView.width - 34;
-        // 用button包装view,这样view就不会随着cell选中时高亮了
-        [self.arrowAccessoryView removeFromSuperview]; // 先移除
-        UIButton *accessoryButton = [[UIButton alloc] init];
-        [accessoryButton addSubview:item.accessoryView];
-        self.arrowAccessoryView = accessoryButton;
-        [self.contentView addSubview:accessoryButton];
-    } else {
-        self.selectionStyle = UITableViewCellSelectionStyleNone;
-        if ([item isKindOfClass:[PYSwitchCell class]]) {// 右边辅助为开关按钮
-            PYSwitchCell *switchItem = (PYSwitchCell *)item;
-            self.accessoryView = switchItem.switchButton;
-        } else if ([item isKindOfClass:[PYDetailCell class]]) { // 右边为详情按钮
-            self.selectionStyle = UITableViewCellSelectionStyleDefault;
-            self.detailAccessoryView.hidden = NO;
-            self.accessoryType = UITableViewCellAccessoryDetailButton;
-            self.accessoryView = nil;
-            item.accessoryView.y = (item.height - item.accessoryView.height) * 0.5;
-            item.accessoryView.x = [UIScreen mainScreen].bounds.size.width - item.accessoryView.width - 50;
-            // 用button包装view,这样view就不会随着cell选中时高亮了
-            [self.detailAccessoryView removeFromSuperview]; // 先移除
-            UIButton *accessoryButton = [[UIButton alloc] init];
-            [accessoryButton addSubview:item.accessoryView];
-            self.detailAccessoryView = accessoryButton;
-            [self.contentView addSubview:accessoryButton];
-        
-        } else if ([item isKindOfClass:[PYCell class]]) { // 默认cell(一定要放在最后判断，因为PYCell是基类)
-            self.accessoryType = UITableViewCellAccessoryNone;
-            self.accessoryView = item.accessoryView;
-        }
-    }
+    // 是否隐藏自定义accessorView
+    self.arrowAccessoryView.hidden = ![[item class] isSubclassOfClass:[PYArrowCell class]];
+    self.detailAccessoryView.hidden = ![[item class] isSubclassOfClass:[PYDetailCell class]];
+
 }
 
 
