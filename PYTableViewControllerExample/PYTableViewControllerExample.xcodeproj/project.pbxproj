@@ -15,21 +15,20 @@
 		6B8248DF1CF6916B00F134F6 /* PYTableViewControllerExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8248DE1CF6916B00F134F6 /* PYTableViewControllerExampleUITests.m */; };
 		6B8248F11CF691F300F134F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8248F01CF691F300F134F6 /* AppDelegate.m */; };
 		6B8248F41CF692A600F134F6 /* PYExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8248F31CF692A600F134F6 /* PYExampleTableViewController.m */; };
-		6B82491D1CF695F700F134F6 /* PYArrowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249141CF695F700F134F6 /* PYArrowCell.m */; };
-		6B82491E1CF695F700F134F6 /* PYCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249161CF695F700F134F6 /* PYCell.m */; };
-		6B8249201CF695F700F134F6 /* PYSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B82491A1CF695F700F134F6 /* PYSwitchCell.m */; };
-		6B8249261CF6960C00F134F6 /* UITableViewCell+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249231CF6960C00F134F6 /* UITableViewCell+Extension.m */; };
-		6B8249271CF6960C00F134F6 /* UITableViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249251CF6960C00F134F6 /* UITableViewController+Extension.m */; };
-		6B82492B1CF697F400F134F6 /* PYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B82492A1CF697F400F134F6 /* PYTableViewCell.m */; };
-		6B82492E1CF6980C00F134F6 /* PYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B82492D1CF6980C00F134F6 /* PYTableViewController.m */; };
-		6B8249311CF6986900F134F6 /* PYGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249301CF6986900F134F6 /* PYGroup.m */; };
-		6B8249341CF698D500F134F6 /* UIView+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249331CF698D500F134F6 /* UIView+extension.m */; };
-		6B8249371CF69A7000F134F6 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249361CF69A7000F134F6 /* NSString+Extension.m */; };
-		6B82493A1CF6B9A400F134F6 /* PYDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249391CF6B9A400F134F6 /* PYDetailCell.m */; };
 		6B82493E1CF6CC3600F134F6 /* PYTempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B82493C1CF6CC3600F134F6 /* PYTempViewController.m */; };
-		6B8249421CF9641F00F134F6 /* PYLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249411CF9641F00F134F6 /* PYLabelCell.m */; };
-		6B8249451CF969C100F134F6 /* PYConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249441CF969C100F134F6 /* PYConst.m */; };
-		6B8249481CF975DD00F134F6 /* PYCheckCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249471CF975DD00F134F6 /* PYCheckCell.m */; };
+		6B8249691CF9E1B600F134F6 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B82494C1CF9E1B600F134F6 /* NSString+Extension.m */; };
+		6B82496A1CF9E1B600F134F6 /* UITableViewCell+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B82494F1CF9E1B600F134F6 /* UITableViewCell+Extension.m */; };
+		6B82496B1CF9E1B600F134F6 /* UITableViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249511CF9E1B600F134F6 /* UITableViewController+Extension.m */; };
+		6B82496C1CF9E1B600F134F6 /* UIView+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249531CF9E1B600F134F6 /* UIView+extension.m */; };
+		6B82496D1CF9E1B600F134F6 /* PYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249561CF9E1B600F134F6 /* PYTableViewController.m */; };
+		6B82496E1CF9E1B600F134F6 /* PYArrowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249591CF9E1B600F134F6 /* PYArrowCell.m */; };
+		6B82496F1CF9E1B600F134F6 /* PYCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B82495B1CF9E1B600F134F6 /* PYCell.m */; };
+		6B8249701CF9E1B600F134F6 /* PYCheckCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B82495D1CF9E1B600F134F6 /* PYCheckCell.m */; };
+		6B8249711CF9E1B600F134F6 /* PYDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B82495F1CF9E1B600F134F6 /* PYDetailCell.m */; };
+		6B8249721CF9E1B600F134F6 /* PYGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249611CF9E1B600F134F6 /* PYGroup.m */; };
+		6B8249731CF9E1B600F134F6 /* PYLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249631CF9E1B600F134F6 /* PYLabelCell.m */; };
+		6B8249741CF9E1B600F134F6 /* PYSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249651CF9E1B600F134F6 /* PYSwitchCell.m */; };
+		6B8249751CF9E1B600F134F6 /* PYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249681CF9E1B600F134F6 /* PYTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,36 +65,34 @@
 		6B8248F01CF691F300F134F6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6B8248F21CF692A600F134F6 /* PYExampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYExampleTableViewController.h; sourceTree = "<group>"; };
 		6B8248F31CF692A600F134F6 /* PYExampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYExampleTableViewController.m; sourceTree = "<group>"; };
-		6B8249131CF695F700F134F6 /* PYArrowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYArrowCell.h; sourceTree = "<group>"; };
-		6B8249141CF695F700F134F6 /* PYArrowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYArrowCell.m; sourceTree = "<group>"; };
-		6B8249151CF695F700F134F6 /* PYCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYCell.h; sourceTree = "<group>"; };
-		6B8249161CF695F700F134F6 /* PYCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYCell.m; sourceTree = "<group>"; };
-		6B8249191CF695F700F134F6 /* PYSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSwitchCell.h; sourceTree = "<group>"; };
-		6B82491A1CF695F700F134F6 /* PYSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSwitchCell.m; sourceTree = "<group>"; };
-		6B8249221CF6960C00F134F6 /* UITableViewCell+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Extension.h"; sourceTree = "<group>"; };
-		6B8249231CF6960C00F134F6 /* UITableViewCell+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Extension.m"; sourceTree = "<group>"; };
-		6B8249241CF6960C00F134F6 /* UITableViewController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewController+Extension.h"; sourceTree = "<group>"; };
-		6B8249251CF6960C00F134F6 /* UITableViewController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewController+Extension.m"; sourceTree = "<group>"; };
-		6B8249291CF697F400F134F6 /* PYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYTableViewCell.h; sourceTree = "<group>"; };
-		6B82492A1CF697F400F134F6 /* PYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYTableViewCell.m; sourceTree = "<group>"; };
-		6B82492C1CF6980C00F134F6 /* PYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYTableViewController.h; sourceTree = "<group>"; };
-		6B82492D1CF6980C00F134F6 /* PYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYTableViewController.m; sourceTree = "<group>"; };
-		6B82492F1CF6986900F134F6 /* PYGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYGroup.h; sourceTree = "<group>"; };
-		6B8249301CF6986900F134F6 /* PYGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYGroup.m; sourceTree = "<group>"; };
-		6B8249321CF698D500F134F6 /* UIView+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+extension.h"; sourceTree = "<group>"; };
-		6B8249331CF698D500F134F6 /* UIView+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+extension.m"; sourceTree = "<group>"; };
-		6B8249351CF69A7000F134F6 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
-		6B8249361CF69A7000F134F6 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
-		6B8249381CF6B9A400F134F6 /* PYDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYDetailCell.h; sourceTree = "<group>"; };
-		6B8249391CF6B9A400F134F6 /* PYDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYDetailCell.m; sourceTree = "<group>"; };
 		6B82493B1CF6CC3600F134F6 /* PYTempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYTempViewController.h; sourceTree = "<group>"; };
 		6B82493C1CF6CC3600F134F6 /* PYTempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYTempViewController.m; sourceTree = "<group>"; };
-		6B8249401CF9641F00F134F6 /* PYLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYLabelCell.h; sourceTree = "<group>"; };
-		6B8249411CF9641F00F134F6 /* PYLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYLabelCell.m; sourceTree = "<group>"; };
-		6B8249431CF969C100F134F6 /* PYConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PYConst.h; path = PYTableViewControllerExample/Classes/Controller/PYConst.h; sourceTree = SOURCE_ROOT; };
-		6B8249441CF969C100F134F6 /* PYConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PYConst.m; path = PYTableViewControllerExample/Classes/Controller/PYConst.m; sourceTree = SOURCE_ROOT; };
-		6B8249461CF975DD00F134F6 /* PYCheckCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYCheckCell.h; sourceTree = "<group>"; };
-		6B8249471CF975DD00F134F6 /* PYCheckCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYCheckCell.m; sourceTree = "<group>"; };
+		6B82494B1CF9E1B600F134F6 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		6B82494C1CF9E1B600F134F6 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		6B82494E1CF9E1B600F134F6 /* UITableViewCell+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Extension.h"; sourceTree = "<group>"; };
+		6B82494F1CF9E1B600F134F6 /* UITableViewCell+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Extension.m"; sourceTree = "<group>"; };
+		6B8249501CF9E1B600F134F6 /* UITableViewController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewController+Extension.h"; sourceTree = "<group>"; };
+		6B8249511CF9E1B600F134F6 /* UITableViewController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewController+Extension.m"; sourceTree = "<group>"; };
+		6B8249521CF9E1B600F134F6 /* UIView+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+extension.h"; sourceTree = "<group>"; };
+		6B8249531CF9E1B600F134F6 /* UIView+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+extension.m"; sourceTree = "<group>"; };
+		6B8249551CF9E1B600F134F6 /* PYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYTableViewController.h; sourceTree = "<group>"; };
+		6B8249561CF9E1B600F134F6 /* PYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYTableViewController.m; sourceTree = "<group>"; };
+		6B8249581CF9E1B600F134F6 /* PYArrowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYArrowCell.h; sourceTree = "<group>"; };
+		6B8249591CF9E1B600F134F6 /* PYArrowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYArrowCell.m; sourceTree = "<group>"; };
+		6B82495A1CF9E1B600F134F6 /* PYCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYCell.h; sourceTree = "<group>"; };
+		6B82495B1CF9E1B600F134F6 /* PYCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYCell.m; sourceTree = "<group>"; };
+		6B82495C1CF9E1B600F134F6 /* PYCheckCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYCheckCell.h; sourceTree = "<group>"; };
+		6B82495D1CF9E1B600F134F6 /* PYCheckCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYCheckCell.m; sourceTree = "<group>"; };
+		6B82495E1CF9E1B600F134F6 /* PYDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYDetailCell.h; sourceTree = "<group>"; };
+		6B82495F1CF9E1B600F134F6 /* PYDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYDetailCell.m; sourceTree = "<group>"; };
+		6B8249601CF9E1B600F134F6 /* PYGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYGroup.h; sourceTree = "<group>"; };
+		6B8249611CF9E1B600F134F6 /* PYGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYGroup.m; sourceTree = "<group>"; };
+		6B8249621CF9E1B600F134F6 /* PYLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYLabelCell.h; sourceTree = "<group>"; };
+		6B8249631CF9E1B600F134F6 /* PYLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYLabelCell.m; sourceTree = "<group>"; };
+		6B8249641CF9E1B600F134F6 /* PYSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYSwitchCell.h; sourceTree = "<group>"; };
+		6B8249651CF9E1B600F134F6 /* PYSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYSwitchCell.m; sourceTree = "<group>"; };
+		6B8249671CF9E1B600F134F6 /* PYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYTableViewCell.h; sourceTree = "<group>"; };
+		6B8249681CF9E1B600F134F6 /* PYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +182,7 @@
 		6B8248EC1CF691F300F134F6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				6B82490F1CF695F700F134F6 /* PYTableViewController */,
+				6B8249491CF9E1B600F134F6 /* PYTableViewController */,
 				6B8248ED1CF691F300F134F6 /* PYExampleController */,
 				6B8248EE1CF691F300F134F6 /* Others */,
 			);
@@ -213,88 +210,77 @@
 			path = Others;
 			sourceTree = "<group>";
 		};
-		6B82490F1CF695F700F134F6 /* PYTableViewController */ = {
+		6B8249491CF9E1B600F134F6 /* PYTableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6B8249101CF695F700F134F6 /* Categoty */,
-				6B8249111CF695F700F134F6 /* Controller */,
-				6B8249121CF695F700F134F6 /* Model */,
-				6B82491B1CF695F700F134F6 /* Other */,
-				6B82491C1CF695F700F134F6 /* View */,
+				6B82494A1CF9E1B600F134F6 /* Categoty */,
+				6B8249541CF9E1B600F134F6 /* Controller */,
+				6B8249571CF9E1B600F134F6 /* Model */,
+				6B8249661CF9E1B600F134F6 /* View */,
 			);
-			name = PYTableViewController;
-			path = PYTableView;
+			path = PYTableViewController;
 			sourceTree = "<group>";
 		};
-		6B8249101CF695F700F134F6 /* Categoty */ = {
+		6B82494A1CF9E1B600F134F6 /* Categoty */ = {
 			isa = PBXGroup;
 			children = (
-				6B8249351CF69A7000F134F6 /* NSString+Extension.h */,
-				6B8249361CF69A7000F134F6 /* NSString+Extension.m */,
-				6B8249321CF698D500F134F6 /* UIView+extension.h */,
-				6B8249331CF698D500F134F6 /* UIView+extension.m */,
-				6B8249211CF6960C00F134F6 /* UITableView+Extension */,
+				6B82494B1CF9E1B600F134F6 /* NSString+Extension.h */,
+				6B82494C1CF9E1B600F134F6 /* NSString+Extension.m */,
+				6B82494D1CF9E1B600F134F6 /* UITableView+Extension */,
+				6B8249521CF9E1B600F134F6 /* UIView+extension.h */,
+				6B8249531CF9E1B600F134F6 /* UIView+extension.m */,
 			);
 			path = Categoty;
 			sourceTree = "<group>";
 		};
-		6B8249111CF695F700F134F6 /* Controller */ = {
+		6B82494D1CF9E1B600F134F6 /* UITableView+Extension */ = {
 			isa = PBXGroup;
 			children = (
-				6B82492C1CF6980C00F134F6 /* PYTableViewController.h */,
-				6B82492D1CF6980C00F134F6 /* PYTableViewController.m */,
+				6B82494E1CF9E1B600F134F6 /* UITableViewCell+Extension.h */,
+				6B82494F1CF9E1B600F134F6 /* UITableViewCell+Extension.m */,
+				6B8249501CF9E1B600F134F6 /* UITableViewController+Extension.h */,
+				6B8249511CF9E1B600F134F6 /* UITableViewController+Extension.m */,
+			);
+			path = "UITableView+Extension";
+			sourceTree = "<group>";
+		};
+		6B8249541CF9E1B600F134F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6B8249551CF9E1B600F134F6 /* PYTableViewController.h */,
+				6B8249561CF9E1B600F134F6 /* PYTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		6B8249121CF695F700F134F6 /* Model */ = {
+		6B8249571CF9E1B600F134F6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6B82492F1CF6986900F134F6 /* PYGroup.h */,
-				6B8249301CF6986900F134F6 /* PYGroup.m */,
-				6B8249151CF695F700F134F6 /* PYCell.h */,
-				6B8249161CF695F700F134F6 /* PYCell.m */,
-				6B8249401CF9641F00F134F6 /* PYLabelCell.h */,
-				6B8249411CF9641F00F134F6 /* PYLabelCell.m */,
-				6B8249131CF695F700F134F6 /* PYArrowCell.h */,
-				6B8249141CF695F700F134F6 /* PYArrowCell.m */,
-				6B8249191CF695F700F134F6 /* PYSwitchCell.h */,
-				6B82491A1CF695F700F134F6 /* PYSwitchCell.m */,
-				6B8249381CF6B9A400F134F6 /* PYDetailCell.h */,
-				6B8249391CF6B9A400F134F6 /* PYDetailCell.m */,
-				6B8249461CF975DD00F134F6 /* PYCheckCell.h */,
-				6B8249471CF975DD00F134F6 /* PYCheckCell.m */,
+				6B8249581CF9E1B600F134F6 /* PYArrowCell.h */,
+				6B8249591CF9E1B600F134F6 /* PYArrowCell.m */,
+				6B82495A1CF9E1B600F134F6 /* PYCell.h */,
+				6B82495B1CF9E1B600F134F6 /* PYCell.m */,
+				6B82495C1CF9E1B600F134F6 /* PYCheckCell.h */,
+				6B82495D1CF9E1B600F134F6 /* PYCheckCell.m */,
+				6B82495E1CF9E1B600F134F6 /* PYDetailCell.h */,
+				6B82495F1CF9E1B600F134F6 /* PYDetailCell.m */,
+				6B8249601CF9E1B600F134F6 /* PYGroup.h */,
+				6B8249611CF9E1B600F134F6 /* PYGroup.m */,
+				6B8249621CF9E1B600F134F6 /* PYLabelCell.h */,
+				6B8249631CF9E1B600F134F6 /* PYLabelCell.m */,
+				6B8249641CF9E1B600F134F6 /* PYSwitchCell.h */,
+				6B8249651CF9E1B600F134F6 /* PYSwitchCell.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		6B82491B1CF695F700F134F6 /* Other */ = {
+		6B8249661CF9E1B600F134F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6B8249431CF969C100F134F6 /* PYConst.h */,
-				6B8249441CF969C100F134F6 /* PYConst.m */,
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
-		6B82491C1CF695F700F134F6 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				6B8249291CF697F400F134F6 /* PYTableViewCell.h */,
-				6B82492A1CF697F400F134F6 /* PYTableViewCell.m */,
+				6B8249671CF9E1B600F134F6 /* PYTableViewCell.h */,
+				6B8249681CF9E1B600F134F6 /* PYTableViewCell.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		6B8249211CF6960C00F134F6 /* UITableView+Extension */ = {
-			isa = PBXGroup;
-			children = (
-				6B8249221CF6960C00F134F6 /* UITableViewCell+Extension.h */,
-				6B8249231CF6960C00F134F6 /* UITableViewCell+Extension.m */,
-				6B8249241CF6960C00F134F6 /* UITableViewController+Extension.h */,
-				6B8249251CF6960C00F134F6 /* UITableViewController+Extension.m */,
-			);
-			path = "UITableView+Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,24 +413,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B82491D1CF695F700F134F6 /* PYArrowCell.m in Sources */,
-				6B8249451CF969C100F134F6 /* PYConst.m in Sources */,
-				6B8249421CF9641F00F134F6 /* PYLabelCell.m in Sources */,
+				6B8249731CF9E1B600F134F6 /* PYLabelCell.m in Sources */,
+				6B8249751CF9E1B600F134F6 /* PYTableViewCell.m in Sources */,
+				6B8249721CF9E1B600F134F6 /* PYGroup.m in Sources */,
+				6B82496F1CF9E1B600F134F6 /* PYCell.m in Sources */,
+				6B8249711CF9E1B600F134F6 /* PYDetailCell.m in Sources */,
+				6B8249741CF9E1B600F134F6 /* PYSwitchCell.m in Sources */,
+				6B8249691CF9E1B600F134F6 /* NSString+Extension.m in Sources */,
+				6B82496B1CF9E1B600F134F6 /* UITableViewController+Extension.m in Sources */,
+				6B82496D1CF9E1B600F134F6 /* PYTableViewController.m in Sources */,
+				6B82496A1CF9E1B600F134F6 /* UITableViewCell+Extension.m in Sources */,
 				6B8248F11CF691F300F134F6 /* AppDelegate.m in Sources */,
 				6B8248BB1CF6916B00F134F6 /* main.m in Sources */,
-				6B8249201CF695F700F134F6 /* PYSwitchCell.m in Sources */,
-				6B8249341CF698D500F134F6 /* UIView+extension.m in Sources */,
-				6B82491E1CF695F700F134F6 /* PYCell.m in Sources */,
-				6B82493A1CF6B9A400F134F6 /* PYDetailCell.m in Sources */,
-				6B8249311CF6986900F134F6 /* PYGroup.m in Sources */,
-				6B82492B1CF697F400F134F6 /* PYTableViewCell.m in Sources */,
+				6B82496E1CF9E1B600F134F6 /* PYArrowCell.m in Sources */,
 				6B8248F41CF692A600F134F6 /* PYExampleTableViewController.m in Sources */,
-				6B82492E1CF6980C00F134F6 /* PYTableViewController.m in Sources */,
-				6B8249261CF6960C00F134F6 /* UITableViewCell+Extension.m in Sources */,
-				6B8249271CF6960C00F134F6 /* UITableViewController+Extension.m in Sources */,
-				6B8249371CF69A7000F134F6 /* NSString+Extension.m in Sources */,
+				6B82496C1CF9E1B600F134F6 /* UIView+extension.m in Sources */,
 				6B82493E1CF6CC3600F134F6 /* PYTempViewController.m in Sources */,
-				6B8249481CF975DD00F134F6 /* PYCheckCell.m in Sources */,
+				6B8249701CF9E1B600F134F6 /* PYCheckCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

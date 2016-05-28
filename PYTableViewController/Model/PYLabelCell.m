@@ -10,25 +10,68 @@
 @interface PYLabelCell()
 
 
+
 @end
 
 @implementation PYLabelCell
 
-// 懒加载
+- (instancetype)init
+{
+    if (self = [super init]) {
+        // 默认辅助样式
+        self.accessoryType = UITableViewCellAccessoryNone;
+        // 设置默认选中状态
+        self.selectionStyle = UITableViewCellSelectionStyleDefault;
+    }
+    return self;
+}
 
-- (void)setText:(NSString *)text
+
+// 重写accessoryView方法
+- (UIView *)accessoryView
 {
-    _text = text;
-}
-- (void)setTitle:(NSString *)title
-{
-    [super setTitle:title];
-    
+    [self.tableViewCell.labelView removeFromSuperview];
+    if (self.label) { // 有自定义label
+        [self.tableViewCell.contentView addSubview:self.label];
+        self.tableViewCell.labelView = self.label;
+    } else {
+        UILabel *label = [[UILabel alloc] init];
+        label.text = self.text;
+        label.textAlignment = NSTextAlignmentCenter;
+        label.frame = self.tableViewCell.bounds;
+        self.tableViewCell.labelView = label;
+        [self.tableViewCell.contentView addSubview:label];
+    }
+    return [super accessoryView];
 }
 
-+ (instancetype)cellWithTitle:(NSString *)title icon:(NSString *)icon
++ (instancetype)cellWithText:(NSString *)text
 {
-   
-    return  [super cellWithTitle:title icon:icon];
+    PYLabelCell *cell = [[self alloc] init];
+    cell.text = text;
+    return cell;
 }
+
++ (instancetype)cellWithText:(NSString *)text didSelectedCell:(PYTableViewCellBlock)option
+{
+    PYLabelCell *cell = [self cellWithText:text];
+    cell.option = option;
+    return cell;
+}
+
++ (instancetype)cellWithLabel:(UILabel *)label
+{
+    PYLabelCell *cell = [[self alloc] init];
+    cell.label = label;
+    return cell;
+}
+
++ (instancetype)cellWithLabel:(UILabel *)label didSelectedCell:(PYTableViewCellBlock)option
+{
+    PYLabelCell *cell = [self cellWithLabel:label];
+    cell.option = option;
+    return cell;
+}
+
+
 @end
