@@ -45,18 +45,15 @@ typedef void(^PYTableViewCellBlock)(PYTableViewCell *selectedCell, UITableView *
 
 /** 是否隐藏指示标 */
 @property (nonatomic, assign) BOOL hiddenArrow;
-
 /** cell的高度 */
 @property (nonatomic, assign) CGFloat height;
-
 /** cell的AccessoryType类型 */
 @property (nonatomic, assign) UITableViewCellAccessoryType accessoryType;
-
 /** cell的选中状态 */
 @property (nonatomic, assign) UITableViewCellSelectionStyle selectionStyle;
-
 /** 每一个模型绑定的tableViewcell */
 @property (nonatomic, weak) PYTableViewCell *tableViewCell;
+
 
 + (instancetype)cellWithTitle:(NSString *)title;
 + (instancetype)cellWithTitle:(NSString *)title icon:(NSString *)icon;

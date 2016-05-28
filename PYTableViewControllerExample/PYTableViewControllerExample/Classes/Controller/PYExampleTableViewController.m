@@ -235,6 +235,7 @@
     cell7.accessoryTitleColor = PYRandomColor;
     cell7.backgroundColor = PYRandomColor;
     
+    
     // 添加所有cell
     group2.cells = (NSMutableArray *)@[cell1, cell2, cell3, cell4, cell5, cell6, cell7];
     
@@ -273,6 +274,7 @@
     
     // 添加所有cell
     group1.cells = (NSMutableArray *)@[cell1, cell2, cell3, cell4, cell5, cell6, cell7];
+    
     // 把组添加到所以组中
     [self.groups addObject:group1];
 }

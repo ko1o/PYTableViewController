@@ -42,7 +42,7 @@
         self.tableViewCell.labelView = label;
         [self.tableViewCell.contentView addSubview:label];
     }
-    return [super accessoryView];
+    return nil;
 }
 
 + (instancetype)cellWithText:(NSString *)text
