@@ -29,6 +29,7 @@
 		6B82493E1CF6CC3600F134F6 /* PYTempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B82493C1CF6CC3600F134F6 /* PYTempViewController.m */; };
 		6B8249421CF9641F00F134F6 /* PYLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249411CF9641F00F134F6 /* PYLabelCell.m */; };
 		6B8249451CF969C100F134F6 /* PYConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249441CF969C100F134F6 /* PYConst.m */; };
+		6B8249481CF975DD00F134F6 /* PYCheckCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249471CF975DD00F134F6 /* PYCheckCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,8 @@
 		6B8249411CF9641F00F134F6 /* PYLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYLabelCell.m; sourceTree = "<group>"; };
 		6B8249431CF969C100F134F6 /* PYConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PYConst.h; path = PYTableViewControllerExample/Classes/Controller/PYConst.h; sourceTree = SOURCE_ROOT; };
 		6B8249441CF969C100F134F6 /* PYConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PYConst.m; path = PYTableViewControllerExample/Classes/Controller/PYConst.m; sourceTree = SOURCE_ROOT; };
+		6B8249461CF975DD00F134F6 /* PYCheckCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYCheckCell.h; sourceTree = "<group>"; };
+		6B8249471CF975DD00F134F6 /* PYCheckCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYCheckCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +262,8 @@
 				6B82491A1CF695F700F134F6 /* PYSwitchCell.m */,
 				6B8249381CF6B9A400F134F6 /* PYDetailCell.h */,
 				6B8249391CF6B9A400F134F6 /* PYDetailCell.m */,
+				6B8249461CF975DD00F134F6 /* PYCheckCell.h */,
+				6B8249471CF975DD00F134F6 /* PYCheckCell.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -439,6 +444,7 @@
 				6B8249271CF6960C00F134F6 /* UITableViewController+Extension.m in Sources */,
 				6B8249371CF69A7000F134F6 /* NSString+Extension.m in Sources */,
 				6B82493E1CF6CC3600F134F6 /* PYTempViewController.m in Sources */,
+				6B8249481CF975DD00F134F6 /* PYCheckCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

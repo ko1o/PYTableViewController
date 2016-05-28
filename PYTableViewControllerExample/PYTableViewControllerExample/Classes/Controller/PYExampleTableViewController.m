@@ -38,6 +38,31 @@
     
     // 创建组五
     [self createGroup5];
+    
+    // 创建组六
+    [self createGroup6];
+}
+
+/** 创建第六组 */
+- (void)createGroup6
+{
+    PYGroup *group6 = [[PYGroup alloc] init];
+    group6.header = @"单选样式";
+    
+    PYCheckCell *cell1 = [PYCheckCell cellWithTitle:@"男" didSelectedCell:^(PYTableViewCell *selectedCell, UITableView *tableView) {
+        // 单选选中时，执行代码写在这里
+        NSLog(@"选中---男");
+    }];
+    PYCheckCell *cell2 = [PYCheckCell cellWithTitle:@"女" didSelectedCell:^(PYTableViewCell *selectedCell, UITableView *tableView) {
+        // 单选选中时，执行代码写在这里
+        NSLog(@"选中---女");
+    }];
+    
+    // 添加所有cell
+    group6.cells = (NSMutableArray *)@[cell1, cell2];
+    
+    // 添加组到所有组中
+    [self.groups addObject:group6];
 }
 
 /** 创建第五组 */
@@ -47,10 +72,6 @@
     group5.header = @"文本按钮样式";
     
     PYLabelCell *cell1 = [PYLabelCell cellWithText:@"退出登录" didSelectedCell:^(PYTableViewCell *selectedCell, UITableView *tableView) {
-        // 取消选中
-        NSIndexPath *indexPath = [tableView indexPathForCell:selectedCell];
-        [tableView deselectRowAtIndexPath:indexPath animated:YES];
-        
         UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"退出后不会删除任何历史数据，下次登录依然可以使用本账号" delegate:nil cancelButtonTitle:@"取消" destructiveButtonTitle:@"退出登录" otherButtonTitles:nil, nil];
         [sheet showInView:self.view];
     }];
@@ -62,10 +83,6 @@
     label.font = [UIFont systemFontOfSize:22];
     label.size = CGSizeMake(PYScreenW, 44);
     PYLabelCell *cell2 = [PYLabelCell cellWithLabel:label didSelectedCell:^(PYTableViewCell *selectedCell, UITableView *tableView) {
-        // 取消选中
-        NSIndexPath *indexPath = [tableView indexPathForCell:selectedCell];
-        [tableView deselectRowAtIndexPath:indexPath animated:YES];
-        
         UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"这是自定义Label的操作" delegate:nil cancelButtonTitle:@"取消" destructiveButtonTitle:@"确定" otherButtonTitles:nil, nil];
         [sheet showInView:self.view];
     }];

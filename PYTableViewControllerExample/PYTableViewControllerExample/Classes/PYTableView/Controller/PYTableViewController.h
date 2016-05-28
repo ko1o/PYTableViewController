@@ -15,6 +15,7 @@
 #import "PYGroup.h"
 #import "PYLabelCell.h"
 #import "PYConst.h"
+#import "PYCheckCell.h"
 
 @interface PYTableViewController : UITableViewController
 

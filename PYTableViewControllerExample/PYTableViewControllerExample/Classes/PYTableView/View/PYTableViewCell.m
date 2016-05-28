@@ -12,6 +12,7 @@
 #import "PYSwitchCell.h"
 #import "PYDetailCell.h"
 #import "PYLabelCell.h"
+#import "PYCheckCell.h"
 
 @interface PYTableViewCell ()
 
@@ -59,7 +60,7 @@ static NSString *ID = @"cell";
     // 设置Cell的数据
     self.backgroundColor = item.backgroundColor ? item.backgroundColor : [UIColor whiteColor];
     self.textLabel.text = item.title;
-    self.textLabel.font = item.titleFont ? item.titleFont : self.textLabel.font;
+    self.textLabel.font = item.titleFont ? item.titleFont : [UIFont systemFontOfSize:18];
     self.textLabel.textColor = item.titleColor ? item.titleColor : [UIColor blackColor];
     self.detailTextLabel.text = item.accessoryTitle;
     self.detailTextLabel.font = item.accessoryTitleFont ? item.accessoryTitleFont : [UIFont systemFontOfSize:14];

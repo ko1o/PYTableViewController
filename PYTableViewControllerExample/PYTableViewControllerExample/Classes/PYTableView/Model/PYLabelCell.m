@@ -33,6 +33,7 @@
     [self.tableViewCell.labelView removeFromSuperview];
     if (self.label) { // 有自定义label
         [self.tableViewCell.contentView addSubview:self.label];
+        self.tableViewCell.labelView = self.label;
     } else {
         UILabel *label = [[UILabel alloc] init];
         label.text = self.text;

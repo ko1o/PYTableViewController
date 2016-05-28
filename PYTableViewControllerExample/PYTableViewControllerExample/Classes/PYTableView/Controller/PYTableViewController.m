@@ -35,7 +35,7 @@
 #pragma  mark - datasource
 
 // 返回组数
-- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return self.groups.count;
 }
@@ -98,6 +98,21 @@
     
     PYTableViewCell *selectedCell = [tableView cellForRowAtIndexPath:indexPath];
     
+    // 如果PYCheckCell
+    if ([[item class] isSubclassOfClass:[PYCheckCell class]]) {
+        // 获取当前组
+        for (PYCheckCell *cell in group.cells) {
+            cell.checked = [cell isEqual:item];
+        }
+        // 刷新cell
+        NSIndexSet *set = [NSIndexSet indexSetWithIndex:indexPath.section];
+        [tableView reloadSections:set withRowAnimation:UITableViewRowAnimationNone];
+    }
+    // 如果PYLabelCell
+    if ([[item class] isSubclassOfClass:[PYLabelCell class]]) {
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    }
+    
     // 执行操作
     if (item.option) item.option(selectedCell,tableView);
 
@@ -115,7 +130,6 @@
 #pragma mark - 辅助按钮被点就
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"辅助按钮被点击");
     
     PYGroup *group = self.groups[indexPath.section];
     PYCell *item = group.cells[indexPath.row];
