@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PYConst.h"
 
 
 @class PYCell;
@@ -36,6 +37,9 @@
 
 /** 带详情的cell的自定义辅助view */
 @property (nonatomic, weak) UIButton *detailAccessoryView;
+
+/** 带文本按钮的cell的label */
+@property (nonatomic, weak) UILabel *labelView;
 
 + (instancetype)cellWithTableView:(UITableView *)tableView;
 

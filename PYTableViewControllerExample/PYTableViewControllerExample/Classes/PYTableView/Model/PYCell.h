@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PYTableViewCell.h"
+#import "PYConst.h"
 @class UITableViewCell;
 
 typedef void(^PYTableViewCellBlock)(PYTableViewCell *selectedCell, UITableView *tableView);

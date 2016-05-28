@@ -27,6 +27,8 @@
 		6B8249371CF69A7000F134F6 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249361CF69A7000F134F6 /* NSString+Extension.m */; };
 		6B82493A1CF6B9A400F134F6 /* PYDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249391CF6B9A400F134F6 /* PYDetailCell.m */; };
 		6B82493E1CF6CC3600F134F6 /* PYTempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B82493C1CF6CC3600F134F6 /* PYTempViewController.m */; };
+		6B8249421CF9641F00F134F6 /* PYLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249411CF9641F00F134F6 /* PYLabelCell.m */; };
+		6B8249451CF969C100F134F6 /* PYConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8249441CF969C100F134F6 /* PYConst.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +75,6 @@
 		6B8249231CF6960C00F134F6 /* UITableViewCell+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Extension.m"; sourceTree = "<group>"; };
 		6B8249241CF6960C00F134F6 /* UITableViewController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewController+Extension.h"; sourceTree = "<group>"; };
 		6B8249251CF6960C00F134F6 /* UITableViewController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewController+Extension.m"; sourceTree = "<group>"; };
-		6B8249281CF6962700F134F6 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		6B8249291CF697F400F134F6 /* PYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYTableViewCell.h; sourceTree = "<group>"; };
 		6B82492A1CF697F400F134F6 /* PYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYTableViewCell.m; sourceTree = "<group>"; };
 		6B82492C1CF6980C00F134F6 /* PYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYTableViewController.h; sourceTree = "<group>"; };
@@ -88,6 +89,10 @@
 		6B8249391CF6B9A400F134F6 /* PYDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYDetailCell.m; sourceTree = "<group>"; };
 		6B82493B1CF6CC3600F134F6 /* PYTempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYTempViewController.h; sourceTree = "<group>"; };
 		6B82493C1CF6CC3600F134F6 /* PYTempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYTempViewController.m; sourceTree = "<group>"; };
+		6B8249401CF9641F00F134F6 /* PYLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYLabelCell.h; sourceTree = "<group>"; };
+		6B8249411CF9641F00F134F6 /* PYLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYLabelCell.m; sourceTree = "<group>"; };
+		6B8249431CF969C100F134F6 /* PYConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PYConst.h; path = PYTableViewControllerExample/Classes/Controller/PYConst.h; sourceTree = SOURCE_ROOT; };
+		6B8249441CF969C100F134F6 /* PYConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PYConst.m; path = PYTableViewControllerExample/Classes/Controller/PYConst.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +157,6 @@
 				6B8248C71CF6916B00F134F6 /* LaunchScreen.storyboard */,
 				6B8248CA1CF6916B00F134F6 /* Info.plist */,
 				6B8248BA1CF6916B00F134F6 /* main.m */,
-				6B8249281CF6962700F134F6 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -245,10 +249,12 @@
 			children = (
 				6B82492F1CF6986900F134F6 /* PYGroup.h */,
 				6B8249301CF6986900F134F6 /* PYGroup.m */,
-				6B8249131CF695F700F134F6 /* PYArrowCell.h */,
-				6B8249141CF695F700F134F6 /* PYArrowCell.m */,
 				6B8249151CF695F700F134F6 /* PYCell.h */,
 				6B8249161CF695F700F134F6 /* PYCell.m */,
+				6B8249401CF9641F00F134F6 /* PYLabelCell.h */,
+				6B8249411CF9641F00F134F6 /* PYLabelCell.m */,
+				6B8249131CF695F700F134F6 /* PYArrowCell.h */,
+				6B8249141CF695F700F134F6 /* PYArrowCell.m */,
 				6B8249191CF695F700F134F6 /* PYSwitchCell.h */,
 				6B82491A1CF695F700F134F6 /* PYSwitchCell.m */,
 				6B8249381CF6B9A400F134F6 /* PYDetailCell.h */,
@@ -260,6 +266,8 @@
 		6B82491B1CF695F700F134F6 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				6B8249431CF969C100F134F6 /* PYConst.h */,
+				6B8249441CF969C100F134F6 /* PYConst.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -415,6 +423,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B82491D1CF695F700F134F6 /* PYArrowCell.m in Sources */,
+				6B8249451CF969C100F134F6 /* PYConst.m in Sources */,
+				6B8249421CF9641F00F134F6 /* PYLabelCell.m in Sources */,
 				6B8248F11CF691F300F134F6 /* AppDelegate.m in Sources */,
 				6B8248BB1CF6916B00F134F6 /* main.m in Sources */,
 				6B8249201CF695F700F134F6 /* PYSwitchCell.m in Sources */,
@@ -570,7 +580,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PYTableViewControllerExample/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = PYTableViewControllerExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -584,7 +594,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PYTableViewControllerExample/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = PYTableViewControllerExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

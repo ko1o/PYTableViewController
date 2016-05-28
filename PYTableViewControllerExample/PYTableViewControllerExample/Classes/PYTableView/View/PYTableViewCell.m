@@ -11,6 +11,7 @@
 #import "PYArrowCell.h"
 #import "PYSwitchCell.h"
 #import "PYDetailCell.h"
+#import "PYLabelCell.h"
 
 @interface PYTableViewCell ()
 
@@ -72,6 +73,7 @@ static NSString *ID = @"cell";
     // 是否隐藏自定义accessorView
     self.arrowAccessoryView.hidden = ![[item class] isSubclassOfClass:[PYArrowCell class]];
     self.detailAccessoryView.hidden = ![[item class] isSubclassOfClass:[PYDetailCell class]];
+    self.labelView.hidden = ![[item class] isSubclassOfClass:[PYLabelCell class]];
 
 }
 

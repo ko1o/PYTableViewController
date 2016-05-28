@@ -35,15 +35,55 @@
 
     // 创建组四
     [self createGroup4];
+    
+    // 创建组五
+    [self createGroup5];
 }
+
+/** 创建第五组 */
+- (void)createGroup5
+{
+    PYGroup *group5 = [[PYGroup alloc] init];
+    group5.header = @"文本按钮样式";
+    
+    PYLabelCell *cell1 = [PYLabelCell cellWithText:@"退出登录" didSelectedCell:^(PYTableViewCell *selectedCell, UITableView *tableView) {
+        // 取消选中
+        NSIndexPath *indexPath = [tableView indexPathForCell:selectedCell];
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        
+        UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"退出后不会删除任何历史数据，下次登录依然可以使用本账号" delegate:nil cancelButtonTitle:@"取消" destructiveButtonTitle:@"退出登录" otherButtonTitles:nil, nil];
+        [sheet showInView:self.view];
+    }];
+    
+    // 自定义label
+    UILabel *label = [[UILabel alloc] init];
+    label.text = @"自定义label";
+    label.textColor = PYRandomColor;
+    label.font = [UIFont systemFontOfSize:22];
+    label.size = CGSizeMake(PYScreenW, 44);
+    PYLabelCell *cell2 = [PYLabelCell cellWithLabel:label didSelectedCell:^(PYTableViewCell *selectedCell, UITableView *tableView) {
+        // 取消选中
+        NSIndexPath *indexPath = [tableView indexPathForCell:selectedCell];
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        
+        UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"这是自定义Label的操作" delegate:nil cancelButtonTitle:@"取消" destructiveButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [sheet showInView:self.view];
+    }];
+    
+    // 添加所有cell
+    group5.cells = (NSMutableArray *)@[cell1, cell2];
+    
+    // 添加组到所有组中
+    [self.groups addObject:group5];
+}
+
 
 /** 创建第四组 */
 - (void)createGroup4
 {
-    
-    
     PYGroup *group4 = [[PYGroup alloc] init];
     group4.header = @"详情样式";
+    
     // 执行选中详情cell的操作
     void (^operation)() = ^{
         PYTempViewController *tempVc = [[PYTempViewController alloc] init];
@@ -72,7 +112,7 @@
     }];
     
     // 添加所有cell
-    group4.cells = @[cell1, cell2, cell3, cell4];
+    group4.cells = (NSMutableArray *)@[cell1, cell2, cell3, cell4];
     
     // 添加组到所有组中
     [self.groups addObject:group4];
@@ -118,7 +158,7 @@
     }];
     
     // 添加所有cell
-    group3.cells = @[cell1, cell2, cell3];
+    group3.cells = (NSMutableArray *)@[cell1, cell2, cell3];
     
     // 添加组到所有组中
     [self.groups addObject:group3];
@@ -179,7 +219,7 @@
     cell7.backgroundColor = PYRandomColor;
     
     // 添加所有cell
-    group2.cells = @[cell1, cell2, cell3, cell4, cell5, cell6, cell7];
+    group2.cells = (NSMutableArray *)@[cell1, cell2, cell3, cell4, cell5, cell6, cell7];
     
     // 添加组到所有组中
     [self.groups addObject:group2];
@@ -215,7 +255,7 @@
     cell7.backgroundColor = PYRandomColor;
     
     // 添加所有cell
-    group1.cells = @[cell1, cell2, cell3, cell4, cell5, cell6, cell7];
+    group1.cells = (NSMutableArray *)@[cell1, cell2, cell3, cell4, cell5, cell6, cell7];
     // 把组添加到所以组中
     [self.groups addObject:group1];
 }

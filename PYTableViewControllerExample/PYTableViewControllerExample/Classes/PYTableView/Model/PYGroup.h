@@ -17,6 +17,6 @@
 @property (nonatomic, copy) NSString *footer;
 
 /** 每一组所有的cells*/
-@property (nonatomic, strong) NSArray *cells;
+@property (nonatomic, strong) NSMutableArray *cells;
 
 @end

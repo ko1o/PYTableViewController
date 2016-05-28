@@ -13,6 +13,8 @@
 #import "PYSwitchCell.h"
 #import "PYCell.h"
 #import "PYGroup.h"
+#import "PYLabelCell.h"
+#import "PYConst.h"
 
 @interface PYTableViewController : UITableViewController
 

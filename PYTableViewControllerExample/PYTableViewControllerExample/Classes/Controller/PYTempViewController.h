@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PYConst.h"
 
 @interface PYTempViewController : UIViewController
 
