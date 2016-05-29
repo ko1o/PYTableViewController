@@ -10,4 +10,12 @@
 
 @implementation PYGroup
 
+- (NSMutableArray *)cells
+{
+    if (!_cells) {
+        _cells = [NSMutableArray array];
+    }
+    return _cells;
+}
+
 @end
