@@ -113,7 +113,10 @@
     }
     
     // 执行操作
-    if (item.option) item.option(selectedCell,tableView);
+    if (item.option) item.option(selectedCell);
+    if ([item.target respondsToSelector:item.action]) { // 实现方法
+        [item.target performSelector:item.action withObject:selectedCell];
+    }
 
 }
 
@@ -135,6 +138,6 @@
     
     PYTableViewCell *selectedCell = [tableView cellForRowAtIndexPath:indexPath];
     // 执行操作
-    if (item.option) item.option(selectedCell,tableView);
+    if (item.option) item.option(selectedCell);
 }
 @end

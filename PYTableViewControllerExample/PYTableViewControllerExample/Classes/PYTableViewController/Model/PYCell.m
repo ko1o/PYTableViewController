@@ -130,4 +130,67 @@
     return cell;
 }
 
++ (instancetype)cellWithTitle:(NSString *)title didSelectedCellTarget:(id)target action:(SEL)action
+{
+    PYCell *cell = [self cellWithTitle:title];
+    cell.target = target;
+    cell.action = action;
+    return cell;
+}
+
++ (instancetype)cellWithTitle:(NSString *)title icon:(NSString *)icon didSelectedCellTarget:(id)target action:(SEL)action
+{
+    PYCell *cell = [self cellWithTitle:title icon:icon];
+    cell.target = target;
+    cell.action = action;
+    return cell;
+}
+
++ (instancetype)cellWithTitle:(NSString *)title accessoryView:(UIView *)accessoryView didSelectedCellTarget:(id)target action:(SEL)action
+{
+    PYCell *cell = [self cellWithTitle:title accessoryView:accessoryView];
+    cell.target = target;
+    cell.action = action;
+    return cell;
+}
+
++ (instancetype)cellWithTitle:(NSString *)title accessoryTitle:(NSString *)accessoryTitle didSelectedCellTarget:(id)target action:(SEL)action
+{
+    PYCell *cell = [self cellWithTitle:title accessoryTitle:accessoryTitle];
+    cell.target = target;
+    cell.action = action;
+    return cell;
+}
+
++ (instancetype)cellWithTitle:(NSString *)title icon:(NSString *)icon accessoryView:(UIView *)accessoryView didSelectedCellTarget:(id)target action:(SEL)action
+{
+    PYCell *cell = [self cellWithTitle:title icon:icon accessoryView:accessoryView];
+    cell.target = target;
+    cell.action = action;
+    return cell;
+}
+
++ (instancetype)cellWithTitle:(NSString *)title icon:(NSString *)icon accessoryTitle:(NSString *)accessoryTitle didSelectedCellTarget:(id)target action:(SEL)action
+{
+    PYCell *cell = [self cellWithTitle:title icon:icon accessoryTitle:accessoryTitle];
+    cell.target = target;
+    cell.action = action;
+    return cell;
+}
+
++ (instancetype)cellWithTitle:(NSString *)title icon:(NSString *)icon backgroundImage:(NSString *)backgroundImage didSelectedCellTarget:(id)target action:(SEL)action
+{
+    PYCell *cell = [self cellWithTitle:title icon:icon backgroundImage:backgroundImage];
+    cell.target = target;
+    cell.action = action;
+    return cell;
+}
+
+- (void)didSelectedCellTarget:(id)target action:(SEL)action
+{
+    self.target = target;
+    self.action = action;
+}
+
+
 @end

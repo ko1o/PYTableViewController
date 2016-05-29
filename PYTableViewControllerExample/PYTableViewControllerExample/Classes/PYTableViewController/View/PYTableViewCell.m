@@ -52,6 +52,11 @@ static NSString *ID = @"PYCell";
     return cell;
 }
 
+- (NSIndexPath *)indexPath
+{
+    return [self.tableView indexPathForCell:self];
+}
+
 #pragma mark - setting
 - (void)setItem:(PYCell *)item
 {

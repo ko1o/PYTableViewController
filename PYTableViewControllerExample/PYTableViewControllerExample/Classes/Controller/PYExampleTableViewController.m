@@ -8,6 +8,7 @@
 
 #import "PYExampleTableViewController.h"
 #import "PYTempViewController.h"
+#import "PYTableViewCell.h"
 
 #define PYTitle @"标题"
 #define PYAccessoryTitle @"附加说明"
@@ -49,11 +50,11 @@
     PYGroup *group6 = [[PYGroup alloc] init];
     group6.header = @"单选样式";
     
-    PYCheckCell *cell1 = [PYCheckCell cellWithTitle:@"男" didSelectedCell:^(PYTableViewCell *selectedCell, UITableView *tableView) {
+    PYCheckCell *cell1 = [PYCheckCell cellWithTitle:@"男" didSelectedCell:^(PYTableViewCell *selectedCell) {
         // 单选选中时，执行代码写在这里
         NSLog(@"选中---男");
     }];
-    PYCheckCell *cell2 = [PYCheckCell cellWithTitle:@"女" didSelectedCell:^(PYTableViewCell *selectedCell, UITableView *tableView) {
+    PYCheckCell *cell2 = [PYCheckCell cellWithTitle:@"女" didSelectedCell:^(PYTableViewCell *selectedCell) {
         // 单选选中时，执行代码写在这里
         NSLog(@"选中---女");
     }];
@@ -71,7 +72,7 @@
     PYGroup *group5 = [[PYGroup alloc] init];
     group5.header = @"文本按钮样式";
     
-    PYLabelCell *cell1 = [PYLabelCell cellWithText:@"退出登录" didSelectedCell:^(PYTableViewCell *selectedCell, UITableView *tableView) {
+    PYLabelCell *cell1 = [PYLabelCell cellWithText:@"退出登录" didSelectedCell:^(PYTableViewCell *selectedCell) {
         UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"退出后不会删除任何历史数据，下次登录依然可以使用本账号" delegate:nil cancelButtonTitle:@"取消" destructiveButtonTitle:@"退出登录" otherButtonTitles:nil, nil];
         [sheet showInView:self.view];
     }];
@@ -82,7 +83,7 @@
     label.textColor = PYRandomColor;
     label.font = [UIFont systemFontOfSize:22];
     label.size = CGSizeMake(PYScreenW, 44);
-    PYLabelCell *cell2 = [PYLabelCell cellWithLabel:label didSelectedCell:^(PYTableViewCell *selectedCell, UITableView *tableView) {
+    PYLabelCell *cell2 = [PYLabelCell cellWithLabel:label didSelectedCell:^(PYTableViewCell *selectedCell) {
         UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"这是自定义Label的操作" delegate:nil cancelButtonTitle:@"取消" destructiveButtonTitle:@"确定" otherButtonTitles:nil, nil];
         [sheet showInView:self.view];
     }];
@@ -106,24 +107,24 @@
         PYTempViewController *tempVc = [[PYTempViewController alloc] init];
         [self.navigationController pushViewController:tempVc animated:YES];
     };
-    PYDetailCell *cell1 = [PYDetailCell cellWithTitle:PYTitle didSelectedCell:^(PYTableViewCell *selectedCell, UITableView *tableView) {
+    PYDetailCell *cell1 = [PYDetailCell cellWithTitle:PYTitle didSelectedCell:^(PYTableViewCell *selectedCell) {
         // 执行操作代码写在这里
         operation();
     }];
     PYDetailCell *cell2 = [PYDetailCell cellWithTitle:PYTitle accessoryTitle:PYAccessoryTitle];
     // 为cell2添加执行操作
-    cell2.option = ^(PYTableViewCell *selectedCell, UITableView *tableView) {
+    cell2.option = ^(PYTableViewCell *selectedCell) {
         // 执行操作代码写在这里
         operation();
     };
     // 自定义辅助view
     UIView *accessoryView1 = [[UIView alloc] initWithFrame:CGRectMake(20, 0, 30, 30)];
     accessoryView1.backgroundColor = PYRandomColor;
-    PYDetailCell *cell3 = [PYDetailCell cellWithTitle:PYTitle accessoryView:accessoryView1 didSelectedCell:^(PYTableViewCell *selectedCell, UITableView *tableView) {
+    PYDetailCell *cell3 = [PYDetailCell cellWithTitle:PYTitle accessoryView:accessoryView1 didSelectedCell:^(PYTableViewCell *selectedCell) {
         // 执行操作代码写在这里
         operation();
     }];
-    PYDetailCell *cell4 = [PYDetailCell cellWithTitle:PYTitle icon:@"setting" didSelectedCell:^(PYTableViewCell *selectedCell, UITableView *tableView) {
+    PYDetailCell *cell4 = [PYDetailCell cellWithTitle:PYTitle icon:@"setting" didSelectedCell:^(PYTableViewCell *selectedCell) {
         // 执行操作代码写在这里
         operation();
     }];
@@ -194,27 +195,25 @@
         [self.navigationController pushViewController:tempVc animated:YES];
     };
     // 默认样式
-    PYArrowCell *cell1 = [PYArrowCell cellWithTitle:PYTitle didSelectedCell:^(PYTableViewCell *selectedCell, UITableView *tableView) {
+    PYArrowCell *cell1 = [PYArrowCell cellWithTitle:PYTitle didSelectedCell:^(PYTableViewCell *selectedCell) {
         // 执行操作，为了方便，这里以上面的block来执行操作，使用者可以直接在这里写相应的操作代码
         operation();
     }];
-    PYArrowCell *cell2 = [PYArrowCell cellWithTitle:PYTitle accessoryTitle:PYAccessoryTitle didSelectedCell:^(PYTableViewCell *selectedCell, UITableView *tableView) {
-        // 执行操作
-        operation();
-    }];
+    
+    PYArrowCell *cell2 = [PYArrowCell cellWithTitle:PYTitle accessoryTitle:PYAccessoryTitle didSelectedCellTarget:self action:@selector(didSelectedCell:)];
+    
     // 添加辅助视图
     UIView *accessoryView1 = [[UIView alloc] initWithFrame:CGRectMake(20, 0, 30, 30)];
     accessoryView1.backgroundColor = PYRandomColor;
-    PYArrowCell *cell3 = [PYArrowCell cellWithTitle:PYTitle accessoryView:accessoryView1 didSelectedCell:^(PYTableViewCell *selectedCell, UITableView *tableView) {
-        // 执行操作
-        operation();
-    }];
+    PYArrowCell *cell3 = [PYArrowCell cellWithTitle:PYTitle accessoryView:accessoryView1];
+    cell3.target = self;
+    cell3.action = @selector(didSelectedCell:);
     
-    PYArrowCell *cell4 = [PYArrowCell cellWithTitle:PYTitle icon:PYIcon didSelectedCell:^(PYTableViewCell *selectedCell, UITableView *tableView) {
+    PYArrowCell *cell4 = [PYArrowCell cellWithTitle:PYTitle icon:PYIcon didSelectedCell:^(PYTableViewCell *selectedCell) {
         // 执行操作
         operation();
     }];
-    PYArrowCell *cell5 = [PYArrowCell cellWithTitle:PYTitle icon:PYIcon accessoryTitle:PYAccessoryTitle didSelectedCell:^(PYTableViewCell *selectedCell, UITableView *tableView) {
+    PYArrowCell *cell5 = [PYArrowCell cellWithTitle:PYTitle icon:PYIcon accessoryTitle:PYAccessoryTitle didSelectedCell:^(PYTableViewCell *selectedCell) {
         // 执行操作
         operation();
     }];
@@ -222,7 +221,7 @@
     // 添加辅助视图
     UIView *accessoryView2 = [[UIView alloc] initWithFrame:CGRectMake(20, 0, 30, 30)];
     accessoryView2.backgroundColor = PYRandomColor;
-    PYArrowCell *cell6 = [PYArrowCell cellWithTitle:PYTitle icon:PYIcon accessoryView:accessoryView2 didSelectedCell:^(PYTableViewCell *selectedCell, UITableView *tableView) {
+    PYArrowCell *cell6 = [PYArrowCell cellWithTitle:PYTitle icon:PYIcon accessoryView:accessoryView2 didSelectedCell:^(PYTableViewCell *selectedCell) {
         // 执行操作
         operation();
     }];
@@ -279,10 +278,12 @@
     [self.groups addObject:group1];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+// 选中cell时调用
+- (void)didSelectedCell:(PYTableViewCell *)selectedCell
+{
+    NSLog(@"选中的cell---%zd--%zd", selectedCell.indexPath.section, selectedCell.indexPath.row);
+    PYTempViewController *tempVc = [[PYTempViewController alloc] init];
+    [self.navigationController pushViewController:tempVc animated:YES];
 }
 
 
