@@ -41,6 +41,9 @@
 /** 带文本按钮的cell的label */
 @property (nonatomic, weak) UILabel *labelView;
 
+/** 获取cell的indexPath */
+- (NSIndexPath *)indexPath;
+
 + (instancetype)cellWithTableView:(UITableView *)tableView;
 
 + (instancetype)cellWithTableView:(UITableView *)tableView withTableViewCellStyle:(UITableViewCellStyle)style;

@@ -16,7 +16,7 @@
 /** 尾部标题*/
 @property (nonatomic, copy) NSString *footer;
 
-/** 每一组所有的cells*/
+/** 每一组所有的cells,每一组都是PYCell模型*/
 @property (nonatomic, strong) NSMutableArray *cells;
 
 @end

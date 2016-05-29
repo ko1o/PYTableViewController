@@ -19,10 +19,10 @@
 
 @interface PYTableViewController : UITableViewController
 
-/** tableView的所有组*/
+/** tableView的所有组,包含着是PYGroup模型 */
 @property (nonatomic, strong) NSMutableArray *groups;
 
-/** 选中的cell*/
+/** 选中的cell */
 @property (nonatomic, strong) PYTableViewCell *selectedCell;
 
 @end

@@ -27,22 +27,27 @@
 }
 
 
-// 重写accessoryView方法
-- (UIView *)accessoryView
+- (void)setTableViewCell:(PYTableViewCell *)tableViewCell
 {
+    [super setTableViewCell:tableViewCell];
+    
     [self.tableViewCell.labelView removeFromSuperview];
     if (self.label) { // 有自定义label
-        [self.tableViewCell.contentView addSubview:self.label];
-        self.tableViewCell.labelView = self.label;
+        // 封装一个self.label
+        UILabel *tempView = [[UILabel alloc] init];
+        [tempView addSubview:self.label];
+        self.tableViewCell.labelView = tempView;
+        [self.tableViewCell.contentView addSubview:tempView];
     } else {
         UILabel *label = [[UILabel alloc] init];
         label.text = self.text;
         label.textAlignment = NSTextAlignmentCenter;
         label.frame = self.tableViewCell.bounds;
+        label.backgroundColor = [UIColor clearColor];
         self.tableViewCell.labelView = label;
         [self.tableViewCell.contentView addSubview:label];
     }
-    return [super accessoryView];
+    
 }
 
 + (instancetype)cellWithText:(NSString *)text

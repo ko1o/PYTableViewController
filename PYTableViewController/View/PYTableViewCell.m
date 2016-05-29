@@ -25,7 +25,7 @@
 #pragma mark - 懒加载
 
 // 重用cell的ID
-static NSString *ID = @"cell";
+static NSString *ID = @"PYCell";
 
 #pragma mark - 初始化
 + (instancetype)cellWithTableView:(UITableView *)tableView
@@ -52,11 +52,16 @@ static NSString *ID = @"cell";
     return cell;
 }
 
+- (NSIndexPath *)indexPath
+{
+    return [self.tableView indexPathForCell:self];
+}
+
 #pragma mark - setting
 - (void)setItem:(PYCell *)item
 {
     _item = item;
-  
+    
     // 设置Cell的数据
     self.backgroundColor = item.backgroundColor ? item.backgroundColor : [UIColor whiteColor];
     self.textLabel.text = item.title;
@@ -70,14 +75,10 @@ static NSString *ID = @"cell";
     self.accessoryType = item.accessoryType;
     self.accessoryView = item.accessoryView;
     self.backgroundView = item.backgroundImage ? [[UIImageView alloc] initWithImage:[UIImage imageNamed:item.backgroundImage]] : nil;
-    
-    // 是否隐藏自定义accessorView
-    self.arrowAccessoryView.hidden = ![[item class] isSubclassOfClass:[PYArrowCell class]];
-    self.detailAccessoryView.hidden = ![[item class] isSubclassOfClass:[PYDetailCell class]];
-    self.labelView.hidden = ![[item class] isSubclassOfClass:[PYLabelCell class]];
 
+    self.arrowAccessoryView.hidden = ![item isKindOfClass:[PYArrowCell class]];
+    self.detailAccessoryView.hidden = ![item isKindOfClass:[PYDetailCell class]];
+    self.labelView.hidden = ![item isKindOfClass:[PYLabelCell class]];
 }
-
-
 
 @end

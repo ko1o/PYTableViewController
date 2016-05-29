@@ -63,7 +63,6 @@
     cell.delegate = self;
     cell.dataSource = self;
     
-    
     // 绑定cell（注意：必须先绑定cell再设置数据，因为在设置cell数据时用到了tableViewCell）
     item.tableViewCell = cell;
     // 设置cell数据
@@ -113,8 +112,13 @@
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
     }
     
-    // 执行操作
-    if (item.option) item.option(selectedCell,tableView);
+    // 执行操作(当两种方法同时实现，优先执行回调对象和对调方法，忽略block)
+    if ([item.target respondsToSelector:item.action]) { // 实现方法
+        [item.target performSelector:item.action withObject:selectedCell];
+    } else  if (item.option) {
+        item.option(selectedCell);
+    }
+    
 
 }
 
@@ -136,6 +140,6 @@
     
     PYTableViewCell *selectedCell = [tableView cellForRowAtIndexPath:indexPath];
     // 执行操作
-    if (item.option) item.option(selectedCell,tableView);
+    if (item.option) item.option(selectedCell);
 }
 @end
