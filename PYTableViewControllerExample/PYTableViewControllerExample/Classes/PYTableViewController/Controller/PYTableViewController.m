@@ -112,11 +112,13 @@
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
     }
     
-    // 执行操作
-    if (item.option) item.option(selectedCell);
+    // 执行操作(当两种方法同时实现，优先执行回调对象和对调方法，忽略block)
     if ([item.target respondsToSelector:item.action]) { // 实现方法
         [item.target performSelector:item.action withObject:selectedCell];
+    } else  if (item.option) {
+        item.option(selectedCell);
     }
+    
 
 }
 

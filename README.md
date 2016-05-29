@@ -103,6 +103,10 @@ PYLabelCell		PYSwitchCell
 ```
   
 ## <a id="为选中cell时添加操作"></a>为选中cell时添加操作
+#### 注意：当下面两种方法同时实现，优先选用回调对象(target)和回调方法(SEL)，即block不再调用
+
+* 通过回调（block）
+
 ```objc
  // 在创建cell时，直接通过block为选中cell添加操作。
   PYArrowCell *cell = [PYArrowCell cellWithTitle:PYTitle didSelectedCell:^(PYTableViewCell *selectedCell, UITableView *tableView) {
@@ -116,6 +120,21 @@ PYLabelCell		PYSwitchCell
     // 使用者可以直接在这里写相应的操作代码
   };
 ```
+
+* 通过回调对象(target)和回调方法(SEL)
+
+```objc
+	// 在创建cell时，直接通过添加参数taeget和action为cell添加操作
+	PYArrowCell *cell = [PYArrowCell cellWithTitle:PYTitle accessoryTitle:PYAccessoryTitle didSelectedCellTarget:self action:@selector(didSelectedCell:)];
+	或者
+	// 创建cell
+    PYArrowCell *cell = [PYArrowCell cellWithTitle:PYTitle accessoryView:accessoryView1];
+    // 设置回调对象
+    cell3.target = self;
+    // 设置回调方法
+    cell3.action = @selector(didSelectedCell:);
+```
+
 
 ## <a id="期待"></a>期待
 - 如果在使用过程中遇到BUG,希望您呢个Issues我，谢谢（或者尝试下载最新的框架代码看看BUG修复没有）

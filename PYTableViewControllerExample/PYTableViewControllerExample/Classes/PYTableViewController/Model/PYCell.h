@@ -15,7 +15,7 @@ typedef void(^PYTableViewCellBlock)(PYTableViewCell *selectedCell);
 
 @interface PYCell : NSObject
 
-/** 选中cell的回调 */
+/** 选中cell的回调, 当实现了回调对象和回调方法则忽略该回调 */
 @property (nonatomic, copy) PYTableViewCellBlock option;
 
 /** 回调对象 */
@@ -84,7 +84,7 @@ typedef void(^PYTableViewCellBlock)(PYTableViewCell *selectedCell);
 + (instancetype)cellWithTitle:(NSString *)title icon:(NSString *)icon accessoryTitle:(NSString *)accessoryTitle didSelectedCellTarget:(id)target action:(SEL)action;
 + (instancetype)cellWithTitle:(NSString *)title icon:(NSString *)icon backgroundImage:(NSString *)backgroundImage didSelectedCellTarget:(id)target action:(SEL)action;
 
-/** 设置回调对象和回调方法 */
+/** 设置回调对象和回调方法（此时，忽略option回调） */
 - (void)didSelectedCellTarget:(id)target action:(SEL)action;
 
 @end
