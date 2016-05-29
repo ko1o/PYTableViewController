@@ -112,7 +112,7 @@ PYLabelCell		PYSwitchCell
   PYArrowCell *cell = [PYArrowCell cellWithTitle:PYTitle didSelectedCell:^(PYTableViewCell *selectedCell, UITableView *tableView) {
     // 使用者可以直接在这里写相应的操作代码
   }];
-  或者
+  // 或者
   // 创建cell
   PYArrowCell *cell = [PYArrowCell cellWithTitle:PYTitle accessoryTitle:PYAccessoryTitle];
   // 为cell的option属性赋值一个block添加操作
@@ -126,13 +126,13 @@ PYLabelCell		PYSwitchCell
 ```objc
 	// 在创建cell时，直接通过添加参数taeget和action为cell添加操作
 	PYArrowCell *cell = [PYArrowCell cellWithTitle:PYTitle accessoryTitle:PYAccessoryTitle didSelectedCellTarget:self action:@selector(didSelectedCell:)];
-	或者
+	// 或者
 	// 创建cell
     PYArrowCell *cell = [PYArrowCell cellWithTitle:PYTitle accessoryView:accessoryView1];
     // 设置回调对象
-    cell3.target = self;
-    // 设置回调方法
-    cell3.action = @selector(didSelectedCell:);
+    cell.target = self;
+    // 设置回调方法(使用者可以直接在这个方法中添加相应的操作代码)
+    cell.action = @selector(didSelectedCell:);
 ```
 
 
