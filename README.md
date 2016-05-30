@@ -89,7 +89,7 @@ PYLabelCell		PYSwitchCell
   // 以下代码是放在继承PYTableViewController的tableViewController的viewDidLoad方法中，self代表tableViewController对象
   
   // 1. 创建组group
-  PYGroup *group = [[PYGroup alloc] init];
+  PYGroup *group = [PYGroup group];
   
   // 2. 创建cell
   PYCell *cell = [PYCell cellWithTitle:PYTitle];
