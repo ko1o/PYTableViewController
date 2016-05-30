@@ -187,8 +187,7 @@
 /** 创建第二组 */
 - (void)createGroup2
 {
-    PYGroup *group2 = [[PYGroup alloc] init];
-    group2.header = @"箭头样式";
+
     // 执行选中cell的操作
     void (^operation)() = ^{
         PYTempViewController *tempVc = [[PYTempViewController alloc] init];
@@ -235,20 +234,15 @@
     cell7.backgroundColor = PYRandomColor;
     
     
-    // 添加所有cell
-    group2.cells = (NSMutableArray *)@[cell1, cell2, cell3, cell4, cell5, cell6, cell7];
-    
-    // 添加组到所有组中
-    [self.groups addObject:group2];
+    // 快速创建组并添加到所有组中
+    [self.groups addObject:[PYGroup groupWithHeader:@"箭头样式" cells:(NSMutableArray *)@[cell1, cell2, cell3, cell4, cell5, cell6, cell7]]];
     
 }
 
 /** 创建第一组 */
 - (void)createGroup1
 {
-    PYGroup *group1 = [[PYGroup alloc] init];
-    
-    group1.header = @"普通样式";
+    PYGroup *group1 = [PYGroup groupWithHeader:@"普通样式"];
     // 默认样式
     PYCell *cell1 = [PYCell cellWithTitle:PYTitle];
     PYCell *cell2 = [PYCell cellWithTitle:PYTitle accessoryTitle:PYAccessoryTitle];

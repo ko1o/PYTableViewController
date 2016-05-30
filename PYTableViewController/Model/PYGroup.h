@@ -19,4 +19,15 @@
 /** 每一组所有的cells,每一组都是PYCell模型*/
 @property (nonatomic, strong) NSMutableArray *cells;
 
+
+#pragma mark - 快速创建组方法
++ (instancetype)group;
++ (instancetype)groupWithHeader:(NSString *)header;
++ (instancetype)groupWithFooter:(NSString *)footer;
++ (instancetype)groupWithcells:(NSMutableArray *)cells;
++ (instancetype)groupWithHeader:(NSString *)header footer:(NSString *)footer;
++ (instancetype)groupWithHeader:(NSString *)header cells:(NSMutableArray *)cells;
++ (instancetype)groupWithFooter:(NSString *)footer cells:(NSMutableArray *)cells;
++ (instancetype)groupWithHeader:(NSString *)header footer:(NSString *)footer cells:(NSMutableArray *)cells;
+
 @end
