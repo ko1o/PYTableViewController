@@ -17,12 +17,12 @@
 @interface PYTableViewCell ()
 
 
-
 @end
 
 @implementation PYTableViewCell
 
 #pragma mark - 懒加载
+
 
 // 重用cell的ID
 static NSString *ID = @"PYCell";
@@ -30,7 +30,6 @@ static NSString *ID = @"PYCell";
 #pragma mark - 初始化
 + (instancetype)cellWithTableView:(UITableView *)tableView
 {
-
     // 从缓存池查找Cell
     PYTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (!cell) {
@@ -51,6 +50,31 @@ static NSString *ID = @"PYCell";
     }
     return cell;
 }
+
+// 设置分隔线样式
+- (void)setPyseparatorStyle:(PYTableViewCellSeparatorStyle)pyseparatorStyle
+{
+    _pyseparatorStyle = pyseparatorStyle;
+    
+    
+    if (self.pyseparatorStyle == PYTableViewCellSeparatorStyleDefault) return;
+    
+    // 否则 自定义separate
+    UIView *separatorView = self.separatorView;
+    if (!separatorView) {
+        separatorView = [[UIView alloc] init];
+        self.separatorView = separatorView;
+    }
+    separatorView.height = 0.5;
+    separatorView.width = self.width;
+    separatorView.y = self.height - separatorView.height;
+    separatorView.x = 0;
+    separatorView.backgroundColor = PYTableViewCellSeparatorColor;
+    if (self.pyseparatorStyle == PYTableViewCellSeparatorStyleLongSingleLine) {
+        [self addSubview:separatorView];
+    }
+}
+
 
 - (NSIndexPath *)indexPath
 {
@@ -75,6 +99,7 @@ static NSString *ID = @"PYCell";
     self.accessoryType = item.accessoryType;
     self.accessoryView = item.accessoryView;
     self.backgroundView = item.backgroundImage ? [[UIImageView alloc] initWithImage:[UIImage imageNamed:item.backgroundImage]] : nil;
+    
 
     self.arrowAccessoryView.hidden = ![item isKindOfClass:[PYArrowCell class]];
     self.detailAccessoryView.hidden = ![item isKindOfClass:[PYDetailCell class]];

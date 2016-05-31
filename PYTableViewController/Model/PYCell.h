@@ -11,6 +11,7 @@
 #import "PYConst.h"
 @class UITableViewCell;
 
+
 typedef void(^PYTableViewCellBlock)(PYTableViewCell *selectedCell);
 
 @interface PYCell : NSObject
@@ -58,6 +59,7 @@ typedef void(^PYTableViewCellBlock)(PYTableViewCell *selectedCell);
 @property (nonatomic, assign) UITableViewCellSelectionStyle selectionStyle;
 /** 每一个模型绑定的tableViewcell */
 @property (nonatomic, weak) PYTableViewCell *tableViewCell;
+
 
 
 + (instancetype)cellWithTitle:(NSString *)title;

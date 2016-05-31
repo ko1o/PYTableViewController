@@ -31,9 +31,15 @@
 }
 
 
+- (void)setSeparatorStyle:(PYTableViewCellSeparatorStyle)separatorStyle
+{
+    _separatorStyle = separatorStyle;
+    if (separatorStyle == PYTableViewCellSeparatorStyleDefault) return;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+}
+
 
 #pragma  mark - datasource
-
 // 返回组数
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -52,13 +58,13 @@
 // 返回每一行的内容
 - (PYTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+
     // 获取模型
     PYGroup *group = self.groups[indexPath.section];
     PYCell *item = group.cells[indexPath.row];
     
     // 创建自定义cell
     PYTableViewCell*cell = [PYTableViewCell cellWithTableView:tableView];
-    
     // 设置代理
     cell.delegate = self;
     cell.dataSource = self;
@@ -67,6 +73,8 @@
     item.tableViewCell = cell;
     // 设置cell数据
     cell.item = item;
+    // 设置分隔线样式（注意：必须要先设置完item，才能设置分隔线样式）
+    cell.pyseparatorStyle = self.separatorStyle;
     
     return cell;
 }

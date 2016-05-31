@@ -24,6 +24,8 @@
     [super viewDidLoad];
     
     self.title = @"PYTableViewController";
+    // 设置分隔线
+    self.separatorStyle = PYTableViewCellSeparatorStyleLongSingleLine;
     
     // 创建组一
     [self createGroup1];
@@ -42,6 +44,8 @@
     
     // 创建组六
     [self createGroup6];
+    
+    
 }
 
 /** 创建第六组 */

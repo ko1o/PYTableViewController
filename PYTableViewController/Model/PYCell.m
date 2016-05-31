@@ -8,6 +8,11 @@
 
 #import "PYCell.h"
 
+@interface PYCell ()
+
+
+@end
+
 @implementation PYCell
 
 - (CGFloat)height
@@ -34,7 +39,6 @@
     cell.title = title;
     return cell;
 }
-
 
 
 + (instancetype)cellWithTitle:(NSString *)title icon:(NSString *)icon

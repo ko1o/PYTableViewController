@@ -9,3 +9,10 @@
 #define PYScreenW [UIScreen mainScreen].bounds.size.width
 #define PYScreenH [UIScreen mainScreen].bounds.size.height
 
+#define PYTableViewCellSeparatorColor PYColor(223, 223, 223)
+
+typedef NS_ENUM(NSInteger, PYTableViewCellSeparatorStyle) {
+    PYTableViewCellSeparatorStyleDefault = 0,
+    PYTableViewCellSeparatorStyleNone = 1,
+    PYTableViewCellSeparatorStyleLongSingleLine = 2
+};

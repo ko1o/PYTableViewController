@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "PYConst.h"
 
-
 @class PYCell;
 
 @protocol PYTableViewCellDelegate <UITableViewDelegate>
@@ -43,6 +42,11 @@
 
 /** 获取cell的indexPath */
 - (NSIndexPath *)indexPath;
+
+/** 设置分隔线样式 */
+@property (nonatomic, assign) PYTableViewCellSeparatorStyle pyseparatorStyle;
+/** 设置自定义分割线（当设置了自定义，忽略separatorStyle属性） */
+@property (nonatomic, strong) UIView *separatorView;
 
 + (instancetype)cellWithTableView:(UITableView *)tableView;
 
