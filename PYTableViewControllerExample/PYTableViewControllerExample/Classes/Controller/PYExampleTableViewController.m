@@ -23,9 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"PYTableViewController";
-    // 设置分隔线
-    self.separatorStyle = PYTableViewCellSeparatorStyleLongSingleLine;
+    // 初始化
+    [self setup];
     
     // 创建组一
     [self createGroup1];
@@ -44,7 +43,21 @@
     
     // 创建组六
     [self createGroup6];
-    
+
+}
+
+/** 初始化 */
+- (void)setup
+{
+    self.title = @"PYTableViewController";
+    // 自定义分隔线
+    UIView *separatorView = [[UIView alloc] init];
+    separatorView.height = 5;
+    separatorView.width = 200;
+    separatorView.x = 50;
+    separatorView.y = 39;
+    separatorView.backgroundColor = PYRandomColor;
+    self.separatorView = separatorView;
     
 }
 

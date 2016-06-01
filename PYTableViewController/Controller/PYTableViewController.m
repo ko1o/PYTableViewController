@@ -75,6 +75,8 @@
     cell.item = item;
     // 设置分隔线样式（注意：必须要先设置完item，才能设置分隔线样式）
     cell.pyseparatorStyle = self.separatorStyle;
+    // 设置自定义分隔线(注意: 先确定样式，再自定义)
+    cell.separatorView = self.separatorView;
     
     return cell;
 }

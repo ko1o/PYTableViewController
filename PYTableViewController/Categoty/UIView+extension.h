@@ -17,4 +17,7 @@
 @property (nonatomic, assign) CGFloat height;
 @property (nonatomic, assign) CGSize size;
 @property (nonatomic, assign) CGPoint origin;
+
+/** 完全复制,返回一个属性一样的新对象 */
+- (UIView *)copy;
 @end

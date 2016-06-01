@@ -108,4 +108,10 @@
 {
     return self.frame.origin;
 }
+
+- (UIView *)copy
+{
+    NSData *tempData = [NSKeyedArchiver archivedDataWithRootObject:self];
+    return [NSKeyedUnarchiver unarchiveObjectWithData:tempData];
+}
 @end

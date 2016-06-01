@@ -16,6 +16,8 @@
 
 @interface PYTableViewCell ()
 
+/** 用来包装separatorView */
+@property (nonatomic, strong) UIView *separatorViewCopy;
 
 @end
 
@@ -51,28 +53,43 @@ static NSString *ID = @"PYCell";
     return cell;
 }
 
+
 // 设置分隔线样式
 - (void)setPyseparatorStyle:(PYTableViewCellSeparatorStyle)pyseparatorStyle
 {
     _pyseparatorStyle = pyseparatorStyle;
     
-    
     if (self.pyseparatorStyle == PYTableViewCellSeparatorStyleDefault) return;
     
-    // 否则 自定义separate
-    UIView *separatorView = self.separatorView;
-    if (!separatorView) {
-        separatorView = [[UIView alloc] init];
-        self.separatorView = separatorView;
+    [self.separatorViewCopy removeFromSuperview]; // 先移除
+    
+    UIView *separatorView = [self.separatorView copy];
+
+    self.separatorViewCopy = separatorView;
+    if (self.pyseparatorStyle == PYTableViewCellSeparatorStyleCustomView) { // 自定义分隔线
+        [self addSubview:self.separatorViewCopy];
+        return;
     }
     separatorView.height = 0.5;
     separatorView.width = self.width;
     separatorView.y = self.height - separatorView.height;
-    separatorView.x = 0;
     separatorView.backgroundColor = PYTableViewCellSeparatorColor;
     if (self.pyseparatorStyle == PYTableViewCellSeparatorStyleLongSingleLine) {
+        separatorView.x = 0;
+        [self addSubview:separatorView];
+    } else if (self.pyseparatorStyle == PYTableViewCellSeparatorStyleMarginSingleLine) {
+        separatorView.x = PYTableViewCellSeparatorMarginLeft;
         [self addSubview:separatorView];
     }
+}
+
+// 设置自定义分隔线
+- (void)setSeparatorView:(UIView *)separatorView
+{
+    _separatorView = separatorView;
+    
+    // 设置样式为自定义
+    [self setPyseparatorStyle:PYTableViewCellSeparatorStyleCustomView];
 }
 
 
