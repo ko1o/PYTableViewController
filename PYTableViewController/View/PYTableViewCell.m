@@ -88,6 +88,12 @@ static NSString *ID = @"PYCell";
 {
     _separatorView = separatorView;
     
+    // 如果没有自定义就返回
+    if (!separatorView) return;
+    
+    // 取消系统自带的分隔线
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
     // 设置样式为自定义
     [self setPyseparatorStyle:PYTableViewCellSeparatorStyleCustomView];
 }

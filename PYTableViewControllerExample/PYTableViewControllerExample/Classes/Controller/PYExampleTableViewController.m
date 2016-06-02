@@ -50,15 +50,6 @@
 - (void)setup
 {
     self.title = @"PYTableViewController";
-    // 自定义分隔线
-    UIView *separatorView = [[UIView alloc] init];
-    separatorView.height = 5;
-    separatorView.width = 200;
-    separatorView.x = 50;
-    separatorView.y = 39;
-    separatorView.backgroundColor = PYRandomColor;
-    self.separatorView = separatorView;
-    
 }
 
 /** 创建第六组 */
