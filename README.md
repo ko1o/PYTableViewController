@@ -16,13 +16,13 @@
 - 几乎每个像样软件都会用到UITableViewController，所以你就可以使用到PYTableViewController
 - 主要用在`我的`模块、`个人信息`、`设置`等。如下是各大流行软件使用UITableViewContller的截图
 
-![(img1)](https://github.com/iphone5solo/learngit/raw/master/imagesForPYTabelViewController/IMG_0209.PNG)
-![(img1)](https://github.com/iphone5solo/learngit/raw/master/imagesForPYTabelViewController/IMG_0210.PNG)
-![(img1)](https://github.com/iphone5solo/learngit/raw/master/imagesForPYTabelViewController/IMG_0211.PNG)
-![(img1)](https://github.com/iphone5solo/learngit/raw/master/imagesForPYTabelViewController/IMG_0212.PNG)
-![(img1)](https://github.com/iphone5solo/learngit/raw/master/imagesForPYTabelViewController/IMG_0213.PNG)
-![(img1)](https://github.com/iphone5solo/learngit/raw/master/imagesForPYTabelViewController/IMG_0214.PNG)
-![(img1)](https://github.com/iphone5solo/learngit/raw/master/imagesForPYTabelViewController/IMG_0215.PNG)
+![(img1)](https://github.com/iphone5solo/learngit/raw/master/imagesForPYTableViewController/IMG_0209.PNG)
+![(img1)](https://github.com/iphone5solo/learngit/raw/master/imagesForPYTableViewController/IMG_0210.PNG)
+![(img1)](https://github.com/iphone5solo/learngit/raw/master/imagesForPYTableViewController/IMG_0211.PNG)
+![(img1)](https://github.com/iphone5solo/learngit/raw/master/imagesForPYTableViewController/IMG_0212.PNG)
+![(img1)](https://github.com/iphone5solo/learngit/raw/master/imagesForPYTableViewController/IMG_0213.PNG)
+![(img1)](https://github.com/iphone5solo/learngit/raw/master/imagesForPYTableViewController/IMG_0214.PNG)
+![(img1)](https://github.com/iphone5solo/learngit/raw/master/imagesForPYTableViewController/IMG_0215.PNG)
 
 ## <a id="PYTableViewController框架的主要类"></a>PYTableViewController框架的主要类
 
