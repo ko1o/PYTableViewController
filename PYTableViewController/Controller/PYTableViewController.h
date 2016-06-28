@@ -19,9 +19,6 @@
 
 @interface PYTableViewController : UITableViewController
 
-
-
-
 /** tableView的所有组,包含着是PYGroup模型 */
 @property (nonatomic, strong) NSMutableArray *groups;
 

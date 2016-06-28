@@ -141,10 +141,9 @@
     return item.height;
 }
 
-#pragma mark - 辅助按钮被点就
+#pragma mark - 辅助按钮被点击
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
-    
     PYGroup *group = self.groups[indexPath.section];
     PYCell *item = group.cells[indexPath.row];
     
