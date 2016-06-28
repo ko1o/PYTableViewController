@@ -1,6 +1,5 @@
 #import <UIKit/UIKit.h>
 #import "UIView+extension.h"
-#import "NSString+Extension.h"
 
 #define PYMargin 10
 

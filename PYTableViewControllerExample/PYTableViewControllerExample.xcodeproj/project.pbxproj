@@ -16,7 +16,6 @@
 		6B8248F11CF691F300F134F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8248F01CF691F300F134F6 /* AppDelegate.m */; };
 		6B8248F41CF692A600F134F6 /* PYExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8248F31CF692A600F134F6 /* PYExampleTableViewController.m */; };
 		6B82493E1CF6CC3600F134F6 /* PYTempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B82493C1CF6CC3600F134F6 /* PYTempViewController.m */; };
-		6BA280161CFC127A007FE7E8 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA27FF61CFC127A007FE7E8 /* NSString+Extension.m */; };
 		6BA280171CFC127A007FE7E8 /* UITableViewCell+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA27FF91CFC127A007FE7E8 /* UITableViewCell+Extension.m */; };
 		6BA280181CFC127A007FE7E8 /* UITableViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA27FFB1CFC127A007FE7E8 /* UITableViewController+Extension.m */; };
 		6BA280191CFC127A007FE7E8 /* UIView+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA27FFD1CFC127A007FE7E8 /* UIView+extension.m */; };
@@ -68,8 +67,6 @@
 		6B8248F31CF692A600F134F6 /* PYExampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYExampleTableViewController.m; sourceTree = "<group>"; };
 		6B82493B1CF6CC3600F134F6 /* PYTempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYTempViewController.h; sourceTree = "<group>"; };
 		6B82493C1CF6CC3600F134F6 /* PYTempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYTempViewController.m; sourceTree = "<group>"; };
-		6BA27FF51CFC127A007FE7E8 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
-		6BA27FF61CFC127A007FE7E8 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		6BA27FF81CFC127A007FE7E8 /* UITableViewCell+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Extension.h"; sourceTree = "<group>"; };
 		6BA27FF91CFC127A007FE7E8 /* UITableViewCell+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Extension.m"; sourceTree = "<group>"; };
 		6BA27FFA1CFC127A007FE7E8 /* UITableViewController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewController+Extension.h"; sourceTree = "<group>"; };
@@ -229,8 +226,6 @@
 		6BA27FF41CFC127A007FE7E8 /* Categoty */ = {
 			isa = PBXGroup;
 			children = (
-				6BA27FF51CFC127A007FE7E8 /* NSString+Extension.h */,
-				6BA27FF61CFC127A007FE7E8 /* NSString+Extension.m */,
 				6BA27FF71CFC127A007FE7E8 /* UITableView+Extension */,
 				6BA27FFC1CFC127A007FE7E8 /* UIView+extension.h */,
 				6BA27FFD1CFC127A007FE7E8 /* UIView+extension.m */,
@@ -433,7 +428,6 @@
 				6BA2801C1CFC127A007FE7E8 /* PYCell.m in Sources */,
 				6BA2801E1CFC127A007FE7E8 /* PYDetailCell.m in Sources */,
 				6BA280211CFC127A007FE7E8 /* PYSwitchCell.m in Sources */,
-				6BA280161CFC127A007FE7E8 /* NSString+Extension.m in Sources */,
 				6BA280181CFC127A007FE7E8 /* UITableViewController+Extension.m in Sources */,
 				6BA280231CFC127A007FE7E8 /* PYTableViewCell.m in Sources */,
 				6BA2801A1CFC127A007FE7E8 /* PYTableViewController.m in Sources */,

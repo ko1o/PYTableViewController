@@ -1,8 +1,6 @@
-//
-//  PYCheckCell.h
-//  PYTableViewControllerExample
-//
-//  Created by 谢培艺 on 16/5/28.
+//  代码地址: https://github.com/iphone5solo/PYTableViewController
+//  代码地址: http://code4app.com/thread-8530-1-1.html
+//  Created by CoderKo1o.
 //  Copyright © 2016年 iphone5solo. All rights reserved.
 //
 

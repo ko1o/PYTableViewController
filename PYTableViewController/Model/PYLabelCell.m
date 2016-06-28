@@ -1,11 +1,8 @@
+//  代码地址: https://github.com/iphone5solo/PYTableViewController
+//  代码地址: http://code4app.com/thread-8530-1-1.html
+//  Created by CoderKo1o.
+//  Copyright © 2016年 iphone5solo. All rights reserved.
 //
-//  SettingLabelCell.m
-//  42-彩票
-//
-//  Created by 谢培艺 on 15/9/20.
-//  Copyright (c) 2015年 谢培艺. All rights reserved.
-//
-
 #import "PYLabelCell.h"
 @interface PYLabelCell()
 
